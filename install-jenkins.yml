@@ -29,3 +29,10 @@
         name: jenkins
         state: started
         enabled: true
+        
+    - name: Install Node.js and npm
+      dnf:
+        name:
+          - nodejs
+          - npm
+        state: present
